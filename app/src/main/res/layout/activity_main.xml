@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="390dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bu_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#2196F3"
+        android:text="Files"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message" />
+
+    <Button
+        android:id="@+id/bu_merge"
+        android:layout_width="374dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="43dp"
+        android:backgroundTint="#2196F3"
+        android:text="Merge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_output"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/bu_clearall"
+        android:layout_width="374dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#2196F3"
+        android:text="Clear All"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bu_merge"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <EditText
+        android:id="@+id/edt_output"
+        android:layout_width="386dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="output file name"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <ProgressBar
+        android:id="@+id/pB_Merge"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="388dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_output"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message"
+        app:layout_constraintVertical_bias="0.174"
+        tools:layout_editor_absoluteX="11dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
