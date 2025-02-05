@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VideoMerger</string>
+    <string name="no_file">You don\'t choose any file!</string>
+    <string name="all_cleared">All Cleared!</string>
+    <string name="cost_time">%.1f s</string>
+    <string name="total_time">Total Time : %.1f s</string>
+    <string name="output_name">Output file name</string>
+    <string name="processing">Processing%s</string>
+
+    <string-array name="merge_state">
+        <item>Merge</item>
+    </string-array>
+</resources>
