@@ -1,13 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">VideoMerger</string>
-    <string name="no_file">You don\'t choose any file!</string>
-    <string name="all_cleared">All Cleared!</string>
-    <string name="cost_time">%.1f s</string>
-    <string name="total_time">Total Time : %.1f s</string>
-    <string name="output_name">Output file name</string>
-    <string name="processing">Processing%s</string>
-
-    <string-array name="merge_state">
-        <item>Merge</item>
-    </string-array>
+    <string name="subtitle_count_empty">No videos selected</string>
+    <string name="subtitle_count">%1$d videos · Total %2$s</string>
+    <string name="empty_title">No videos yet</string>
+    <string name="empty_subtitle">Tap \"Add Videos\" to choose one or more video files to merge losslessly.</string>
+    <string name="hint_output_path">Output file path</string>
+    <string name="btn_add_videos">Add Videos</string>
+    <string name="btn_merge">Merge</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_clear_all">Clear All</string>
+    <string name="section_log">Log</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_analyzing">Analyzing video metadata…</string>
+    <string name="status_merging">Merging… %1$d%% · %2$.1fs</string>
+    <string name="status_done">Completed in %.1fs</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_failed">Merge failed</string>
+    <string name="msg_no_files">Please add at least one video first.</string>
+    <string name="msg_invalid_output">Please specify a valid output file path.</string>
+    <string name="msg_all_cleared">Cleared all selected videos.</string>
+    <string name="msg_permission_needed">Please grant \"All files access\" permission so FFmpeg can read and write videos.</string>
+    <string name="msg_unsupported_uri">Could not resolve file path for selected item. Please pick from internal storage.</string>
+    <string name="msg_file_removed">Removed: %s</string>
+    <string name="msg_file_added">Added: %1$s (%2$s)</string>
+    <string name="msg_merge_started">Merging %1$d videos → %2$s</string>
+    <string name="msg_merge_success">Merge completed in %1$.1fs → %2$s</string>
+    <string name="msg_merge_cancelled">Merge cancelled by user.</string>
+    <string name="msg_merge_failed">Merge failed (code %s). Check video formats or output path.</string>
+    <string name="cd_move_up">Move up</string>
+    <string name="cd_move_down">Move down</string>
+    <string name="cd_remove">Remove</string>
+    <string name="cd_clear_all">Clear all</string>
 </resources>
