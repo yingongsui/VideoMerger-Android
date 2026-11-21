@@ -34,6 +34,7 @@ captures/
 # Keystore files
 *.jks
 *.keystore
+key.properties
 
 # macOS / Windows OS files
 .DS_Store
